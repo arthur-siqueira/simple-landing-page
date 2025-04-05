@@ -1,5 +1,4 @@
-﻿# simple-landing-page
+# simple-landing-page
 
-A simple landing page
-
-link: simplelandingpagehtml.netlify.app
+A simple landing page  
+Link: [simplelandingpagehtml.netlify.app](https://simplelandingpagehtml.netlify.app)
