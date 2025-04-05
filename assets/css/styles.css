@@ -1,7 +1,7 @@
 :root {
     --primary-color: #0A1128;
     --white-color: #FFFFFF;
-    --light-gray-color: #EEEEEE;
+    --light-gray-color: #dedede;
     --secondary-color: crimson;
     --gap: 3rem;
 }
@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -67,6 +68,30 @@ a {
 
 p {
     margin-bottom: 3rem;
+}
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td, table th {
+    background: var(--light-gray-color);
 }
 
 .main-bg {
@@ -154,7 +179,6 @@ p {
 
 .intro-content {
     position: relative;
-    top: -8rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -235,4 +259,29 @@ p {
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
 }
